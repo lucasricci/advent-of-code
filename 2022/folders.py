@@ -1,6 +1,6 @@
 import os
 
-root_path = 'E:\\FOSS-Projects\\advent-of-code\\2022\\'
+root_path = '/home/lucas/advent-of-code/2022/'
 folders = []
 
 for c in range(1, 32):
@@ -8,3 +8,5 @@ for c in range(1, 32):
 
 for folder in folders:
     os.mkdir(os.path.join(root_path,folder))
+    os.system(f'touch /home/lucas/advent-of-code/2022/{folder}/program.py')
+
